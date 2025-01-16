@@ -2,8 +2,8 @@
 Contributors: ThemeArile
 Tags: projects, widgets, admin, companion, homepage
 Requires at least: 3.3+
-Tested up to: 6.5.3
-Stable tag: 1.5
+Tested up to: 6.7
+Stable tag: 1.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -14,6 +14,9 @@ Arile Super is a companion plugin for Aasta WordPress theme by ThemeArile.
 This Arile Super plugin is created for ThemeArile. This plugin provides beautiful additional frontpage sections for ThemeArile. And it will allow you full customizer settings to your front page sections. The plugin options are user-friendly and You can use this plugin for every ThemeArile theme.
 
 == Changelog ==
+
+= 1.6 =
+* Added Agencyfy theme support.
 
 = 1.5 =
 * Added Businesstek theme support.

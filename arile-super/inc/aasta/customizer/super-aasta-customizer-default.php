@@ -341,6 +341,32 @@ if ( ! function_exists( 'arilesuper_aasta_main_slider_default_content' ) ) :
 					   )
 					);
 							
+				} elseif('Agencyfy' == $activate_theme){
+					
+					$aasta_main_slider_data->default = json_encode( array(
+						array(
+						'title'      => esc_html__( 'IT Agency & Company', 'arile-super' ),
+						'subtitle'       => esc_html__( 'WELCOME TO', 'arile-super' ),
+						'text'       => esc_html__( 'Many firms publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum infancy.', 'arile-super' ),
+						'button_text'      => __('Check it out','arile-super'),
+						'link'       => '#',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-slide23.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b10',				
+						),
+						array(
+						'title'      => esc_html__( 'Web Design, Marketing & Branding', 'arile-super' ),
+						'subtitle'       => esc_html__( 'CRITERIA FOR SUCCESS', 'arile-super' ),
+						'text'       => esc_html__( 'Many firms publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum infancy.', 'arile-super' ),
+						'button_text'      => __('Check it out','arile-super'),
+						'link'       => '#',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-slide7.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b14',
+						),		
+					   )
+					);
+							
 				}
 				
 				else{
@@ -592,6 +618,41 @@ if ( ! function_exists( 'arilesuper_aasta_service_default_content' ) ) :
 						
 					) );
 					
+				}elseif('Agencyfy' == $activate_theme){
+					
+					$aasta_service_data->default = json_encode( array(
+						array(
+						'icon_value' => 'fa fa-globe',
+						'title'      => esc_html__( 'SEO Optimization', 'arile-super' ),
+						'text'       => 'Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.',
+						'choice'    => 'customizer_repeater_icon',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-service1.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b15',
+						),
+						array(
+						'icon_value' => 'fa fa-bar-chart-o',
+						'title'      => esc_html__( 'Marketing', 'arile-super' ),
+						'text'       => 'Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.',
+						'choice'    => 'customizer_repeater_icon',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-service2.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b16',
+						),
+						array(
+						'icon_value' => 'fa fa-laptop',
+						'title'      => esc_html__( 'Web Design', 'arile-super' ),
+						'text'       => 'Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.',
+						'choice'    => 'customizer_repeater_icon',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-service3.jpg',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b17',
+						),
+					) );
+					
 				}else{
 					$aasta_service_data->default = json_encode( array(
 						array(
@@ -696,7 +757,7 @@ if ( ! function_exists( 'arilesuper_aasta_project_default_content' ) ) :
 						),
 						
 					) );
-				}elseif('AgencyWP' == $activate_theme || 'GlobalHub' == $activate_theme ){
+				}elseif('AgencyWP' == $activate_theme || 'GlobalHub' == $activate_theme || 'Agencyfy' == $activate_theme){
 					$aasta_project_data->default = json_encode( array(
 						array(
 						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-project1.jpg',

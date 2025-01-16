@@ -175,7 +175,11 @@ function arilesuper_aasta_customizer_selective_refresh_settings($wp_customize) {
 	}elseif('BuilderZone' == $activate_theme){
 		$service_area_title = 'BEST CONSTRUCTION SERVICES';
 		$service_area_des = 'Our Services';
-	}else{	
+	}elseif('Agencyfy' == $activate_theme){
+		$service_area_title = 'We are the one of the most effective IT Companies';
+		$service_area_des = 'Our Services';
+	}
+	else{	
 		$service_area_title = 'Our Features';
 		$service_area_des = "World's Best Services We Provide To Grow Your Business"; 	
 	}
@@ -228,7 +232,11 @@ function arilesuper_aasta_customizer_selective_refresh_settings($wp_customize) {
 	}elseif('BuilderZone' == $activate_theme){
 		$project_area_title = 'OUR PROJECTS';
 		$project_area_des = 'Construction Works';
-	}else{	
+	}elseif('Agencyfy' == $activate_theme){
+		$project_area_title = 'Our featured works';
+		$project_area_des = 'Our Latest Projects';
+	}
+	else{	
 		$project_area_title = 'Our Projects';
 		$project_area_des = 'Our Latest Works'; 	
 	}
@@ -289,10 +297,11 @@ function arilesuper_aasta_customizer_selective_refresh_settings($wp_customize) {
 	elseif('InteriorHub' == $activate_theme || 'House Decor' == $activate_theme){
 		$testimonial_area_title = 'WHAT OUR CLIENTS SAY ABOUT US';
 		$testimonial_area_des = 'Testimonials';
-	}elseif('AgencyWP' == $activate_theme || 'GlobalHub' == $activate_theme){
+	}elseif('AgencyWP' == $activate_theme || 'GlobalHub' == $activate_theme || 'Agencyfy' == $activate_theme){
 		$testimonial_area_title = 'Happy clients say';
 		$testimonial_area_des = 'Testimonials';
-	}else{	
+	}
+	else{	
 		$testimonial_area_title = 'Our Customer';
 		$testimonial_area_des = 'What Say Our Happy Clients'; 	
 	}
