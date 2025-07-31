@@ -101,6 +101,13 @@ if ( ! function_exists( 'arilesuper_aasta_frontpage_sections' ) ) :
 			require arile_super_plugin_dir . 'inc/aasta/front-page/super-agencyfy-testimonial.php';	
 			require arile_super_plugin_dir . 'inc/aasta/front-page/super-aasta-blog.php';
 		}
+		elseif('BusinessCore' == $activate_theme){
+			require arile_super_plugin_dir . 'inc/aasta/front-page/super-businesscore-slider.php';	
+			require arile_super_plugin_dir . 'inc/aasta/front-page/super-businesscore-service.php';
+			require arile_super_plugin_dir . 'inc/aasta/front-page/super-businesscore-project.php';
+			require arile_super_plugin_dir . 'inc/aasta/front-page/super-businesscore-testimonial.php';	
+			require arile_super_plugin_dir . 'inc/aasta/front-page/super-aasta-blog.php';
+		}
 		else{
 			require arile_super_plugin_dir . 'inc/aasta/front-page/super-aasta-slider.php';	
 			require arile_super_plugin_dir . 'inc/aasta/front-page/super-aasta-service.php';

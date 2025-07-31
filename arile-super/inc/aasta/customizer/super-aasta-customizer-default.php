@@ -367,6 +367,32 @@ if ( ! function_exists( 'arilesuper_aasta_main_slider_default_content' ) ) :
 					   )
 					);
 							
+				} elseif('BusinessCore' == $activate_theme){
+					
+					$aasta_main_slider_data->default = json_encode( array(
+						array(
+						'title'      => esc_html__( 'Grow Your Business Fast', 'arile-super' ),
+						'subtitle'       => esc_html__( 'Unique Business Ideas', 'arile-super' ),
+						'text'       => esc_html__( 'We provide all types of business solutions and services to our valuable customers for the growth of their businesses to the next level.', 'arile-super' ),
+						'button_text'      => __('Check it out','arile-super'),
+						'link'       => '#',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-slide24.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b10',				
+						),
+						array(
+						'title'      => esc_html__( 'Take Your Business Online', 'arile-super' ),
+						'subtitle'       => esc_html__( 'Growth With Us', 'arile-super' ),
+						'text'       => esc_html__( 'We provide all types of business solutions and services to our valuable customers for the growth of their businesses to the next level.', 'arile-super' ),
+						'button_text'      => __('Check it out','arile-super'),
+						'link'       => '#',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-slide15.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b14',
+						),		
+					   )
+					);
+							
 				}
 				
 				else{
@@ -476,7 +502,7 @@ if ( ! function_exists( 'arilesuper_aasta_service_default_content' ) ) :
 						),
 						
 					) );
-				}elseif('AgencyWP' == $activate_theme || 'Appointech' == $activate_theme|| 'StockPress' == $activate_theme || 'GlobalHub' == $activate_theme){
+				}elseif('AgencyWP' == $activate_theme || 'Appointech' == $activate_theme|| 'StockPress' == $activate_theme || 'GlobalHub' == $activate_theme || 'BusinessCore' == $activate_theme){
 					$aasta_service_data->default = json_encode( array(
 						array(
 						'icon_value' => 'fa fa-globe',
@@ -786,7 +812,7 @@ if ( ! function_exists( 'arilesuper_aasta_project_default_content' ) ) :
 						
 					) );
 				
-				}elseif('Appointech' == $activate_theme || 'StockPress' == $activate_theme || 'BusinessLab' == $activate_theme || 'Hartford' == $activate_theme || 'Businesstek' == $activate_theme){
+				}elseif('Appointech' == $activate_theme || 'StockPress' == $activate_theme || 'BusinessLab' == $activate_theme || 'Hartford' == $activate_theme || 'Businesstek' == $activate_theme || 'BusinessCore' == $activate_theme){
 					$aasta_project_data->default = json_encode( array(
 						array(
 						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-project1.jpg',

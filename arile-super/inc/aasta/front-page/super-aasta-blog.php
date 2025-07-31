@@ -15,7 +15,7 @@ $aasta_home_blog_meta_disabled = get_theme_mod('aasta_home_blog_meta_disabled', 
 $aasta_blog_front_container_size = get_theme_mod('aasta_blog_front_container_size', 'container'); 
 $aasta_theme_blog_category = get_theme_mod('aasta_theme_blog_category');
 if($aasta_blog_disabled == true): ?>
-	<section class="theme-block theme-blog theme-bg-grey <?php if('Appointech' == $activate_theme || 'Architect Studio' == $activate_theme || 'StockPress' == $activate_theme || 'BusinessLab' == $activate_theme || 'BuilderZone' == $activate_theme || 'House Decor' == $activate_theme || 'Businesstek' == $activate_theme){ echo 'vrsn-three';} ?>" id="theme-blog">
+	<section class="theme-block theme-blog theme-bg-grey <?php if('Appointech' == $activate_theme || 'Architect Studio' == $activate_theme || 'StockPress' == $activate_theme || 'BusinessLab' == $activate_theme || 'BuilderZone' == $activate_theme || 'House Decor' == $activate_theme || 'Businesstek' == $activate_theme || 'BusinessCore' == $activate_theme){ echo 'vrsn-three';} ?>" id="theme-blog">
 	 <?php if($aasta_blog_area_title != null || $aasta_blog_area_des != null): ?>
 		<div class="container">
 			<div class="row">
@@ -42,7 +42,7 @@ if($aasta_blog_disabled == true): ?>
 			{	
 				while(have_posts()):the_post();
 				{ ?>
-					<div class="col-lg-<?php if($activate_theme == 'InteriorHub' ||$activate_theme == 'Consultexo' || $activate_theme == 'Appointech' || 'Architect Studio' == $activate_theme || 'StockPress' == $activate_theme || 'BusinessLab' == $activate_theme || 'BuilderZone' == $activate_theme || 'Hartford' == $activate_theme || 'House Decor' == $activate_theme || 'Businesstek' == $activate_theme) { echo '4'; } else { echo '6';}   ?> col-md-6 col-sm-12">
+					<div class="col-lg-<?php if($activate_theme == 'InteriorHub' ||$activate_theme == 'Consultexo' || $activate_theme == 'Appointech' || 'Architect Studio' == $activate_theme || 'StockPress' == $activate_theme || 'BusinessLab' == $activate_theme || 'BuilderZone' == $activate_theme || 'Hartford' == $activate_theme || 'House Decor' == $activate_theme || 'Businesstek' == $activate_theme || 'BusinessCore' == $activate_theme) { echo '4'; } else { echo '6';}   ?> col-md-6 col-sm-12">
 					    <article class="post wow animate fadeInUp" data-wow-delay=".3s">
                         <?php if(has_post_thumbnail()): ?>						
 							<figure class="post-thumbnail">
