@@ -3,7 +3,7 @@
 * Plugin Name:       	Arile Super
 * Plugin URI:        	https://themearile.com/aasta-theme/
 * Description:       	Arile Super Enhances ThemeArile with additional functionality.
-* Version:           	1.7
+* Version:           	1.8
 * Author: 				ThemeArile
 * Author URI: 			https://themearile.com/
 * Tested up to: 		6.8

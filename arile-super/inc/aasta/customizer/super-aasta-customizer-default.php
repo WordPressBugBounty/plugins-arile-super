@@ -3,6 +3,58 @@
  *
  * @package arile-super
  */	
+ 
+/* Top header content  */
+if ( ! function_exists( 'aasta_theme_top_header_default_content' ) ) :		
+    function aasta_theme_top_header_default_content( $wp_customize ){
+			$aasta_theme_top_header_content_control = $wp_customize->get_setting( 'aasta_top_header_info_content' );
+				if ( ! empty( $aasta_theme_top_header_content_control ) ) {
+					$aasta_theme_top_header_content_control->default = json_encode( array(
+						array(
+						'icon_value' => 'fa fa-envelope-o',
+						'text'       => esc_html__( 'info@aasta.com', 'aasta' ),
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b57',
+						),
+						
+					) );
+
+				}
+	    }
+add_action( 'customize_register', 'aasta_theme_top_header_default_content' );
+endif;
+
+/* Top header social icons  */
+if ( ! function_exists( 'aasta_theme_header_social_default_content' ) ) :		
+    function aasta_theme_header_social_default_content( $wp_customize ){
+			$aasta_theme_top_header_social_content_control = $wp_customize->get_setting( 'aasta_top_header_social_content' );
+				if ( ! empty( $aasta_theme_top_header_social_content_control ) ) {
+					$aasta_theme_top_header_social_content_control->default = json_encode( array(
+						array(
+						'icon_value' => 'fa fa-facebook',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b37',
+						),
+						array(
+						'icon_value' => 'fa fa-twitter',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b47',
+						),
+						array(
+						'icon_value' => 'fa fa-google-plus',
+						'link'       => '#',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b57',
+						),
+					) );
+
+				}
+	    }
+add_action( 'customize_register', 'aasta_theme_header_social_default_content' );
+endif; 
 
 if ( ! function_exists( 'arilesuper_aasta_main_slider_default_content' ) ) :
 		/* Main slider content  */

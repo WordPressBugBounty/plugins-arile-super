@@ -22,6 +22,46 @@ function arilesuper_aasta_frontpage_sections_settings( $wp_customize ){
 		'title'      => __('Frontpage Sections', 'arile-super'),
 	) );
 	
+	/* Site Top Header */
+	$wp_customize->add_section( 'aasta_theme_top_header_area' , array(
+		'title'      => __('Site Top Header', 'arile-super'),
+		'panel'  => 'aasta_frontpage_settings',
+		'priority'   => 1,
+	) );
+	
+	
+	    if ( class_exists( 'Aasta_Repeater' ) ) {
+			$wp_customize->add_setting( 'aasta_top_header_social_content', array( ) );
+			$wp_customize->add_control( new Aasta_Repeater( 
+			$wp_customize, 'aasta_top_header_social_content', array(
+						'label'                            => esc_html__( 'Social Items Content', 'arile-super' ),
+						'section'                          => 'aasta_theme_top_header_area',
+						'add_field_label'                  => esc_html__( 'Add new icon', 'arile-super' ),
+						'item_name'                        => esc_html__( 'Social Icon', 'arile-super' ),
+						'customizer_repeater_icon_control'  => true,
+						'customizer_repeater_link_control' => true,
+						'customizer_repeater_checkbox_control' => true,
+					)
+				)
+			);
+		}
+	
+	
+	    if ( class_exists( 'Aasta_Repeater' ) ) {
+			$wp_customize->add_setting( 'aasta_top_header_info_content', array( ) );
+			$wp_customize->add_control( new Aasta_Repeater( 
+			$wp_customize, 'aasta_top_header_info_content', array(
+				'label'                             => esc_html__( 'Info Items Content', 'arile-super' ),
+				'section'                           => 'aasta_theme_top_header_area',
+				'add_field_label'                   => esc_html__( 'Add new info', 'arile-super' ),
+				'item_name'                         => esc_html__( 'Info Item', 'arile-super' ),
+				'customizer_repeater_text_control'  => true,
+				'customizer_repeater_icon_control'  => true,
+				'customizer_repeater_link_control'  => true,
+                'customizer_repeater_checkbox_control' => true,
+			    ) ) );
+		}
+	
 	/* Slider */
 	$wp_customize->add_section( 'aasta_main_theme_slider' , array(
 		'title'      => __('Main Slider', 'arile-super'),

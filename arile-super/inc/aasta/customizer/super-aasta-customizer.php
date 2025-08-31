@@ -15,6 +15,7 @@ if ( ! class_exists( 'ArileSuper_Aasta_Customizer' ) ) :
 	class ArileSuper_Aasta_Customizer {
 
 		public function arilesuper_aasta_customizer_settings() {
+			require arile_super_plugin_dir . 'inc/aasta/customizer/sections/super-aasta-header-customizer-settings.php';
            	require arile_super_plugin_dir . 'inc/aasta/customizer/sections/super-aasta-slider-customizer-settings.php';
 			require arile_super_plugin_dir . 'inc/aasta/customizer/sections/super-aasta-service-customizer-settings.php';
 			require arile_super_plugin_dir . 'inc/aasta/customizer/sections/super-aasta-project-customizer-settings.php';

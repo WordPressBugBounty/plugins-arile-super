@@ -119,3 +119,10 @@ if ( ! function_exists( 'arilesuper_aasta_frontpage_sections' ) ) :
     }
 	add_action( 'arilesuper_aasta_frontpage', 'arilesuper_aasta_frontpage_sections' );
 endif;
+
+if ( ! function_exists( 'arilesuper_aasta_top_header_section' ) ) :
+	function arilesuper_aasta_top_header_section() {
+        require arile_super_plugin_dir . 'inc/aasta/front-page/super-aasta-header.php';		
+    }
+	add_action( 'arilesuper_aasta_top_header', 'arilesuper_aasta_top_header_section' );
+endif;
