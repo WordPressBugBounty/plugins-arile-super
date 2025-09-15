@@ -393,7 +393,7 @@ if ( ! function_exists( 'arilesuper_aasta_main_slider_default_content' ) ) :
 					   )
 					);
 							
-				} elseif('Agencyfy' == $activate_theme){
+				} elseif('ScottStreet' == $activate_theme){
 					
 					$aasta_main_slider_data->default = json_encode( array(
 						array(
@@ -696,7 +696,7 @@ if ( ! function_exists( 'arilesuper_aasta_service_default_content' ) ) :
 						
 					) );
 					
-				}elseif('Agencyfy' == $activate_theme){
+				}elseif('ScottStreet' == $activate_theme){
 					
 					$aasta_service_data->default = json_encode( array(
 						array(
@@ -835,7 +835,7 @@ if ( ! function_exists( 'arilesuper_aasta_project_default_content' ) ) :
 						),
 						
 					) );
-				}elseif('AgencyWP' == $activate_theme || 'GlobalHub' == $activate_theme || 'Agencyfy' == $activate_theme){
+				}elseif('AgencyWP' == $activate_theme || 'GlobalHub' == $activate_theme || 'ScottStreet' == $activate_theme){
 					$aasta_project_data->default = json_encode( array(
 						array(
 						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-project1.jpg',
