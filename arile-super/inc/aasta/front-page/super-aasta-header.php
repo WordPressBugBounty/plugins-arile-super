@@ -10,7 +10,7 @@ $activate_theme = $activate_theme_data->name;
 <?php if($aasta_site_top_header_disabled == true): ?>
 <!--Header Sidebar-->
 	<header id="site-header" class="site-header <?php if('InteriorHub' == $activate_theme || 'Architect Studio' == $activate_theme || 'BusinessCore' == $activate_theme || 'BusinessLab' == $activate_theme || 'BuilderZone' == $activate_theme || 'Consultexo' == $activate_theme || 'Hartford' == $activate_theme || 'Businesstek' == $activate_theme){ echo 'vrsn-two';} ?>">
-		<div class="<?php if('InteriorHub' == $activate_theme || 'House Decor' == $activate_theme || 'GlobalHub' == $activate_theme || 'Appointech' == $activate_theme || 'BuilderZone' == $activate_theme || 'ScottStreet' == $activate_theme){ echo 'container-full';} else { echo 'container';} ?>">
+		<div class="<?php if('InteriorHub' == $activate_theme || 'House Decor' == $activate_theme || 'GlobalHub' == $activate_theme || 'Appointech' == $activate_theme || 'BuilderZone' == $activate_theme || 'ScottStreet' == $activate_theme || 'Interior Layout' == $activate_theme){ echo 'container-full';} else { echo 'container';} ?>">
 			<div class="row">
 			<?php if($aasta_site_top_header_social_disabled == true): ?>
 				<div class="col-lg-3 col-md-6 col-sm-12">

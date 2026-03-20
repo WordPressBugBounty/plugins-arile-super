@@ -3,10 +3,10 @@
 * Plugin Name:       	Arile Super
 * Plugin URI:        	https://themearile.com/aasta-theme/
 * Description:       	Arile Super Enhances ThemeArile with additional functionality.
-* Version:           	1.9
+* Version:           	2.0
 * Author: 				ThemeArile
 * Author URI: 			https://themearile.com/
-* Tested up to: 		6.8
+* Tested up to: 		6.9
 * Requires: 			4.6 or higher
 * License: 				GPLv3 or later
 * License URI: 			http://www.gnu.org/licenses/gpl-3.0.html
@@ -25,7 +25,7 @@ if( !function_exists('arile_super_init') ){
 		$activate_theme_data = wp_get_theme(); // getting current theme data
 		$activate_theme = $activate_theme_data->name;
 		
-		if( 'Aasta' == $activate_theme || 'Aasta Light' == $activate_theme || 'InteriorHub' == $activate_theme || 'AgencyWP' == $activate_theme || 'Consultexo' == $activate_theme || 'Appointech' == $activate_theme || 'Architect Studio' == $activate_theme || 'StockPress' == $activate_theme || 'BusinessLab' == $activate_theme || 'Aasta Blog' == $activate_theme || 'BuilderZone' == $activate_theme || 'GlobalHub' == $activate_theme || 'Hartford' == $activate_theme || 'House Decor' == $activate_theme || 'Businesstek' == $activate_theme || 'ScottStreet' == $activate_theme || 'BusinessCore' == $activate_theme){
+		if( 'Aasta' == $activate_theme || 'Aasta Light' == $activate_theme || 'InteriorHub' == $activate_theme || 'AgencyWP' == $activate_theme || 'Consultexo' == $activate_theme || 'Appointech' == $activate_theme || 'Architect Studio' == $activate_theme || 'StockPress' == $activate_theme || 'BusinessLab' == $activate_theme || 'Aasta Blog' == $activate_theme || 'BuilderZone' == $activate_theme || 'GlobalHub' == $activate_theme || 'Hartford' == $activate_theme || 'House Decor' == $activate_theme || 'Businesstek' == $activate_theme || 'ScottStreet' == $activate_theme || 'BusinessCore' == $activate_theme || 'Interior Layout' == $activate_theme){
 			require("inc/aasta/aasta.php");
 		}
 	}

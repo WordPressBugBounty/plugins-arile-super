@@ -445,6 +445,32 @@ if ( ! function_exists( 'arilesuper_aasta_main_slider_default_content' ) ) :
 					   )
 					);
 							
+				} elseif('Interior Layout' == $activate_theme){
+					
+					$aasta_main_slider_data->default = json_encode( array(
+						array(
+						'title'      => esc_html__( 'INTERIOR & ARCHITECT', 'arile-super' ),
+						'subtitle'       => esc_html__( 'BEST DESIGN SERVICES', 'arile-super' ),
+						'text'       => esc_html__( 'We provide all types of interior and architecture design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.', 'arile-super' ),
+						'button_text'      => __('Check it out','arile-super'),
+						'link'       => '#',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-slide25.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b10',				
+						),
+						array(
+						'title'      => esc_html__( 'INNOVATE YOUR HOME', 'arile-super' ),
+						'subtitle'       => esc_html__( 'HOME DECOR', 'arile-super' ),
+						'text'       => esc_html__( 'We provide all types of interior and architecture design services such as exterior design, kitchen design, room design, furniture design, light design, etc. With the help of which you can build your dream home.', 'arile-super' ),
+						'button_text'      => __('Check it out','arile-super'),
+						'link'       => '#',
+						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-slide5.jpg',
+						'open_new_tab' => 'no',
+						'id'         => 'customizer_repeater_56d7ea7f40b14',
+						),		
+					   )
+					);
+							
 				}
 				
 				else{
@@ -486,7 +512,7 @@ if ( ! function_exists( 'arilesuper_aasta_service_default_content' ) ) :
 			$activate_theme_data = wp_get_theme(); // getting current theme data
 			$activate_theme = $activate_theme_data->name;
 				if ( ! empty( $aasta_service_data ) ) {
-                   if('InteriorHub' == $activate_theme || 'House Decor' == $activate_theme){					
+                   if('InteriorHub' == $activate_theme || 'House Decor' == $activate_theme || 'Interior Layout' == $activate_theme){					
 					$aasta_service_data->default = json_encode( array(
 						array(
 						'icon_value' => 'fa-laptop',
@@ -808,7 +834,7 @@ if ( ! function_exists( 'arilesuper_aasta_project_default_content' ) ) :
 						
 					) );
 				}
-                elseif('InteriorHub' == $activate_theme || 'House Decor' == $activate_theme){			$aasta_project_data->default = json_encode( array(
+                elseif('InteriorHub' == $activate_theme || 'House Decor' == $activate_theme || 'Interior Layout' == $activate_theme){			$aasta_project_data->default = json_encode( array(
 						array(
 						'image_url'  => arile_super_plugin_url .'/inc/aasta/images/theme-project4.jpg',
 						'title'      => __('BEDROOM LIGHTING DÉCOR','arile-super'),
